@@ -1,0 +1,28 @@
+:root{
+	font-size: 16px
+}
+.accordion{
+	display: flex;
+	flex-direction: column;
+}
+.element{
+	border: 2px solid black;
+	margin-bottom: 5px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.heading{
+	background-color: #cccc;
+	font-size: 1.5rem;
+	transition: all 0.5s ease-in-out;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding: 10px
+}
+.content{
+	display: none;
+	padding:10px;
+}
+.heading:hover{
+	background-color: #AAB6F3;
+}
