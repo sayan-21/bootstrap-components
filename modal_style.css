@@ -1,0 +1,48 @@
+.modal{
+	display: none;
+	width: 100vw;
+	height: 100vh;
+	z-index: 5;
+	top: 0;
+	left: 0;
+	position: fixed;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.4);
+}
+.modal-content{
+	position: relative;
+	background-color: #fefefe;
+	width: 70%;
+	margin: auto;
+	top: 10vh;
+	margin-bottom: 10vh;
+	background-color: #2BABF9;
+	animation-name: animatetop;
+	animation-duration: 0.5s;
+	box-shadow: 0 7px 12px 0 rgba(0,0,0,0.7);
+}
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:10vh; opacity:1}
+}
+.modal-body{
+	background-color: white;
+	padding:10px;
+}
+.modal-header{
+	font-size: 1.5rem;
+	padding-left: 10px;
+	padding-right: 10px
+}
+.close{
+	float: right;
+	font-size: 2rem;
+	font-weight: bold;
+	cursor:default;
+}
+@media only screen and (max-width: 600px){
+	.modal-header{
+		font-size: 1rem;
+	}
+}

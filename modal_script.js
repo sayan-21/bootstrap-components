@@ -1,0 +1,14 @@
+$(document).ready(function(){
+	$(".open_modal").click(function(){
+		$(".modal").css("display","block")
+	})
+	$(".modal").click(function(e){
+		$(".modal").css("display","none")
+	})
+	$(".close").click(function(){
+		$(".modal").css("display","none")
+	})
+	$(".modal-content").click(function(e){
+	  e.stopPropagation(); 
+	});
+})
